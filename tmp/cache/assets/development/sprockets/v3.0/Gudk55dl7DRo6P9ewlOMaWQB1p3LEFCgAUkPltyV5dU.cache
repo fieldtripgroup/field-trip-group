@@ -1,0 +1,15 @@
+I"Ø(function() {
+  var ready;
+
+  ready = function() {
+    return $(".header-sticky-wrapper").sticky({
+      topSpacing: 0
+    });
+  };
+
+  $(document).ready(ready);
+
+  $(document).on('page:load', ready);
+
+}).call(this);
+:ET

@@ -1,0 +1,7 @@
+I"s(function() {
+  $(document).ready(function() {
+    return $(".navbar-sticky").sticky();
+  });
+
+}).call(this);
+:ET

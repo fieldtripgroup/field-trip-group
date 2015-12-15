@@ -1,0 +1,15 @@
+I"Ê(function() {
+  var ready;
+
+  ready = function() {
+    return $(".top-bar").sticky({
+      topSpacing: 0
+    });
+  };
+
+  $(document).ready(ready);
+
+  $(document).on('page:load', ready);
+
+}).call(this);
+:ET
