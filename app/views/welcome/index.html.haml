@@ -1,4 +1,4 @@
-%section.hero
+%section.hero.welcome-page
   .row.text-center
     .small-12.columns
       %h1.main-title Field Trip Foundation
@@ -13,3 +13,45 @@
     %p Field Trip Foundation is a volunteer-based, non-profit organization dedicated to providing environmental educational field trips to low-income San Francisco Bay Area school children.
 
     %i.fa.fa-arrow-circle-o-down
+
+%section.few-things
+  .header
+    %h1 A few things we have done
+    %hr/
+  
+  .content
+    %p Since 2000, our hands-on, experiential programs have introduced over 10,000 elementary school children to tide pools, redwood forests, elephant seal rookeries, and much, much more. Our programs serve schools with a majority of low-income students, as these schools have the least amount of resources for educational field trips.
+
+    .row
+      .medium-4.columns
+        .card
+          .image
+            = image_tag 'crab_face.png'
+          .content
+            %p Imagine a whole new world waiting to be discovered...
+      .medium-4.columns
+        .card
+          .image
+            = image_tag 'boys_tide.png'
+          .content
+            %p ...even if it’s just 15 miles away. Sharing the excitment of nature...
+      .medium-4.columns
+        .card
+          .image
+            = image_tag 'kids_tide.png'
+          .content
+            %p ...and exploring the wonders of nature first hand!
+
+  %a.button.field-notes-button{:href => "field-notes"} View Field Notes
+
+%section.contact
+  .header
+    %h1 Let's bring children outside. Contact us!
+    %hr/
+
+  %form.zurb-form{:action => "//formspree.io/szier@icloud.com", :method => "POST"}
+    %input.form-field{:name => "name", :type => "text", :placeholder => "Name"}/
+    %input.form-field{:name => "email", :type => "email", :placeholder => "Email"}/
+    %input.form-field{:name => "phone", :type => "number", :placeholder => "Phone Number"}/
+    %input.form-field{:name => "inquiry", :type => "text", :placeholder => "Brief description..."}/
+    %input.button.round{:type => "submit", :value => "Submit"}/

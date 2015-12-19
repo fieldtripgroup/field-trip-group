@@ -3,16 +3,12 @@
     %li.name
       %a{:href => "/welcome"}
         = image_tag 'logo.svg', class: 'logo'
-    / Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
-    %li.toggle-topbar.menu-icon
-      %a{:href => "#"}
-        %span Menu
   %section.top-bar-section
     %ul.left
       %li
-        %a{:href => "#"} Welcome!
+        %a{:href => "/welcome"} Welcome!
       %li
-        %a{:href => "#"} Notes from the Field
+        %a{:href => "/field-notes"} Notes from the Field
       %li
         %a{:href => "#"} For Teachers
       %li
@@ -21,3 +17,22 @@
         %a{:href => "#"} How to Help
       %li
         %a{:href => "#"} Contact Us
+
+.mobilenav
+  %li
+    %a{:href => "/welcome"} Home
+  %li
+    %a{:href => "/field-notes"} Notes from the Field
+  %li
+    %a{:href => "#"} For Teachers
+  %li
+    %a{:href => "#"} Why Help?
+  %li
+    %a{:href => "#"} How to Help
+  %li
+    %a{:href => "#"} Contact Us
+%a.icon{:href => "javascript:void(0)"}
+  .hamburger
+    .menui.top-menu
+    .menui.mid-menu
+    .menui.bottom-menu
