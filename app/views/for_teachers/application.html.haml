@@ -1,0 +1,61 @@
+.container.grant-application-form
+  .grant-spacer
+  %section
+    .header
+      %h1 Fill out a grant application!
+      %hr/
+
+    %form.zurb-form{:action => "//formspree.io/szier@icloud.com", :method => "POST"}
+      %label.form-label{:for => ""} School Name:
+      %input.form-field{:name => "School Name", :type => "text", :placeholder => "School Name", :required => true}/
+
+      %label.form-label{:for => ""} School District:
+      %input.form-field{:name => "School District", :type => "text", :placeholder => "School District", :required => true}/
+
+      %label.form-label{:for => ""} Principal Name:
+      %input.form-field{:name => "Principal Name", :type => "text", :placeholder => "Principal Name", :required => true}/
+
+      %label.form-label{:for => ""} Principal Phone:
+      %input.form-field{:name => "Principal Phone", :type => "number", :placeholder => "Principal Phone Number", :required => true}/
+
+      %label.form-label{:for => ""} Principal Email:
+      %input.form-field{:name => "Principal Email", :type => "email", :placeholder => "Principal Email", :required => true}/
+
+      %label.form-label{:for => ""} Teacher Name:
+      %input.form-field{:name => "Teacher Name", :type => "text", :placeholder => "Teacher Name", :required => true}/
+
+      %label.form-label{:for => ""} Teacher Phone:
+      %input.form-field{:name => "Teacher Phone", :type => "number", :placeholder => "Teacher Phone Number", :required => true}/
+
+      %label.form-label{:for => ""} Teacher Email:
+      %input.form-field{:name => "Teacher Email", :type => "email", :placeholder => "Teacher Email", :required => true}/
+
+      %label.form-label{:for => ""} Class Grade:
+      %input.form-field{:name => "Class Grade", :type => "text", :placeholder => "Class Grade", :required => true}/
+
+      %label.form-label{:for => ""} Number of Students:
+      %input.form-field{:name => "# of students", :type => "number", :placeholder => "Number of Students Involved", :required => true}/
+
+      %label.form-label{:for => ""} Students with special needs? If so, how many? What accomodations are needed, if any?
+      %textarea.form-field.description{:name => "Special Needs", :cols => "30", :rows => "10", :placeholder => "Are there students with special needs? How many and what accomodations are need?", :required => false}
+
+      %label.form-label{:for => ""} Percentage of Students on Subsidized/Free School Lunch Program Attending:
+      %input.form-field{:name => "Students with free lunch", :type => "text", :placeholder => "Percentage with subsidized/free lunch", :required => true}/
+
+      %label.form-label{:for => ""} Description of the proposed trip and its educational value to the students and the teacher(s):
+      %textarea.form-field.description{:name => "Inquiry", :cols => "30", :rows => "10", :placeholder => "Trip description and educational value...", :required => true}
+
+      %label.form-label{:for => ""} How the trip fits into and enhances your in-class curriculum (very important):
+      %textarea.form-field.description{:name => "How trip fits into curriculum", :cols => "30", :rows => "10", :placeholder => "The trip fits into and enhances our in-class curriculum by...", :required => true}
+
+      %label.form-label{:for => ""} A budget for the entire trip (transportation, food, fees):
+      %input.form-field{:name => "Trip Budget", :type => "text", :placeholder => "Budget", :required => true}/
+
+      %label.form-label{:for => ""} List of other funding sources being sought for the trip (a.k.a. fund raisers, parent contributions, school budget):
+      %textarea.form-field.description{:name => "Funding Sources", :cols => "30", :rows => "10", :placeholder => "Please list other funding sources sought for the trip...", :required => true}
+
+      %label.form-label{:for => ""} Number of volunteers/chaperones needed and how you will or already have recruit(ed) them:
+      %textarea.form-field.description{:name => "# of volunteers needed", :cols => "30", :rows => "10", :placeholder => "Number of volunteers/chaperones needed and how you will or already have recruit(ed) them", :required => true}
+
+      .grant-button
+        %input.button.round{:type => "submit", :value => "Submit"}/

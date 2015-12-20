@@ -1,0 +1,134 @@
+// Place all the styles related to the ForTeachers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "variables.sass"
+
+.for-teachers
+  background: image-url("chalkboard-bg.png") no-repeat center center
+
+.goals
+  hr
+    width: 80% !important
+
+.profile-card
+  padding: 1rem
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+  margin: 2rem 0
+  background-color: #fff
+  img
+    width: 5rem
+    display: block
+    margin: 1rem auto
+    text-align: center
+    border-radius: 50%
+    box-shadow: 2px 2px 5px #888888
+  .profile-info
+    padding: 0.5rem
+    h4
+      color: black
+      margin-top: 0
+      text-align: center
+      text-transform: uppercase
+    p
+      text-align: center
+      color: black
+    .inline-list
+      text-align: center
+      margin-bottom: 1rem
+      li
+        float: none
+        display: inline-block
+
+.grant-requirements
+  background-color: #ecf0f1
+  padding: 50px
+
+.circlenumber
+  background-color: #fff
+  border-radius: 50%
+  border: 1px solid #0b4f69
+  position: relative
+  h3
+    line-height: 1px
+    color: #0b4f69
+    position: relative
+    text-align: center
+    font-weight: normal
+
+
+.grant-button
+  margin: 0 auto
+  width: 100%
+  text-align: center
+
+.grant-application-form
+  background-color: $smooth-green
+  margin-top: -100px
+
+  .grant-spacer
+    height: 100px
+  
+.description
+  height: 100px !important
+
+@media only screen and (min-width: 0) and (max-width: 40em)
+  .step-by-step-style-one .circlenumber
+    width: 80px
+    height: 80px
+    left: -12px
+    margin: 30px auto 15px auto
+    h3
+      padding-top: 35px
+      font-size: 20px
+
+
+@media only screen and (min-width: 40em)
+  .step-by-step-style-one .path-item
+    padding-left: 55px
+    position: relative
+    .circlenumber
+      width: 40px
+      height: 40px
+      position: absolute
+      margin-top: 6px
+      left: 0
+      h3
+        padding-top: 15px
+        font-size: 16px
+
+
+@media only screen and (min-width: 40em)
+  .step-by-step-style-two .circlenumber
+    width: 80px
+    height: 80px
+    left: -12px
+    margin: 30px auto 15px auto
+    h3
+      padding-top: 35px
+      font-size: 20px
+
+
+@media only screen and (min-width: 0) and (max-width: 40em)
+  .step-by-step-style-two .path-item
+    padding-left: 55px
+    position: relative
+    .circlenumber
+      width: 40px
+      height: 40px
+      position: absolute
+      margin-top: 6px
+      left: 0
+      h3
+        padding-top: 15px
+        font-size: 16px
+
+@media #{$phones}
+  .for-teachers
+    background-position: -50px 0px
+  .profile-card
+    margin-bottom: -20px
+  .grant-requirements
+    padding: 10px
+  .grant-spacer
+    height: 200px !important

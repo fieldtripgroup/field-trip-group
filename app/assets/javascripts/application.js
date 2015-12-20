@@ -10,7 +10,6 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require foundation
 //= require jquery
 //= require jquery_ujs
 //= require foundation
@@ -19,10 +18,3 @@
 
 $(function(){ $(document).foundation(); });
 
-$(function() {
-  $(".right-off-canvas-toggle, .exit-off-canvas").click(function() {
-      $(".top-bar").toggleClass("top-bar-close");
-    $(".middle-bar").toggleClass("middle-bar-close");
-    $(".bottom-bar").toggleClass("bottom-bar-close");
-    });
-});
