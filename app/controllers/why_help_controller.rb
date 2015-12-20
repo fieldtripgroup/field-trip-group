@@ -1,0 +1,2 @@
+class WhyHelpController < ApplicationController
+end

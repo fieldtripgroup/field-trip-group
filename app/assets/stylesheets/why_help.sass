@@ -1,0 +1,49 @@
+// Place all the styles related to the WhyHelp controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "variables.sass"
+
+.why-help
+  background: image-url("why-help-bg.png") no-repeat center center
+  height: 500px !important
+  .subheader
+    font-size: 25px
+
+.why-help-ftf
+
+  background-color: #303e49
+  margin-top: -45px
+  padding: 40px
+  color: white
+  text-align: center
+
+  hr
+    width: 80%
+  .content
+    width: 90%
+    margin: 0 auto
+    
+    p
+      margin-top: 30px
+      font-size: 20px
+    i
+      margin-top: 10px
+      font-size: 45px
+.spacer-p
+  height: 10px
+@media #{$phones}
+
+  .subheader
+    font-size: 16px !important
+
+  .why-help-ftf
+    padding: 10px
+
+    .content
+      width: 95%
+  
+      p
+        font-size: 16px
+      i
+        display: none

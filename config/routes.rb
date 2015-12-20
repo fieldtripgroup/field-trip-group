@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   get 'field-notes/hidden-villa-farm' => 'field_notes#hidden-villa-farm'
   get 'for-teachers' => 'for_teachers#index'
   get '/for-teachers/application' => 'for_teachers#application'
+  get 'why-help' => 'why_help#index'
 end

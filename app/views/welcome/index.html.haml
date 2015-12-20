@@ -50,8 +50,8 @@
     %hr/
 
   %form.zurb-form{:action => "//formspree.io/szier@icloud.com", :method => "POST"}
-    %input.form-field{:name => "name", :type => "text", :placeholder => "Name"}/
-    %input.form-field{:name => "email", :type => "email", :placeholder => "Email"}/
-    %input.form-field{:name => "phone", :type => "number", :placeholder => "Phone Number"}/
-    %input.form-field{:name => "inquiry", :type => "text", :placeholder => "Brief description..."}/
+    %input.form-field{:name => "name", :type => "text", :placeholder => "Name", :required => true}/
+    %input.form-field{:name => "email", :type => "email", :placeholder => "Email", :required => true}/
+    %input.form-field{:name => "phone", :type => "number", :placeholder => "Phone Number", :required => true}/
+    %input.form-field{:name => "inquiry", :type => "text", :placeholder => "Brief description...", :required => true}/
     %input.button.round{:type => "submit", :value => "Submit"}/
