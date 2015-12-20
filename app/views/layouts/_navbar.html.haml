@@ -18,21 +18,24 @@
       -# %li
       -#   %a.hidden{:href => "#"} Contact Us
 
-.mobilenav
-  %li
-    %a{:href => "/welcome"} Home
-  %li
-    %a{:href => "/field-notes"} Notes from the Field
-  %li
-    %a{:href => "/for-teachers"} For Teachers
-  %li
-    %a{:href => "#"} Why Help?
-  %li
-    %a{:href => "#"} How to Help
-  -# %li
-  -#   %a.hidden{:href => "#"} Contact Us
-%a.icon{:href => "javascript:void(0)"}
-  .hamburger
-    .menui.top-menu
-    .menui.mid-menu
-    .menui.bottom-menu
+.mobile-hide
+  %input#sidebartoggler{:name => "", :type => "checkbox", :value => ""}/
+  .page-wrap
+    %nav#navbar
+      %label.toggle{:for => "sidebartoggler"}
+        .hamb
+        .hamb{:style => ""}
+        .hamb
+    .sidebar
+      .spacer
+      %ul
+        %li
+          %a{:href => "/welcome"} Welcome!
+        %li
+          %a{:href => "/field-notes"} Notes from the Field
+        %li
+          %a{:href => "/for-teachers"} For Teachers
+        %li
+          %a{:href => "#"} Why Help?
+        %li
+          %a{:href => "#"} How to Help

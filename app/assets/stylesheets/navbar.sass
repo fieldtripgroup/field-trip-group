@@ -1,87 +1,90 @@
 
 @import "variables.sass"
 
-
-
-.top-animate
-  background: #fff !important
-  top: 13px !important
-  -webkit-transform: rotate(45deg)
-  transform: rotate(45deg)
-
-.mid-animate
-  opacity: 0
-
-.bottom-animate
-  background: #fff !important
-  top: 13px !important
-  -webkit-transform: rotate(-225deg)
-  transform: rotate(-225deg)
-
-.top-menu
-  top: 5px
-  width: 25px
-  height: 2px
-  border-radius: 10px
-  background-color: $smooth-green
-
-.mid-menu
-  top: 13px
-  width: 25px
-  height: 2px
-  border-radius: 10px
-  background-color: $smooth-green
-
-.bottom-menu
-  top: 21px
-  width: 25px
-  height: 2px
-  border-radius: 10px
-  background-color: $smooth-green
-
-.menui
+.hamb
+  width: 28px
+  height: 5px
   background: white
-  transition: 0.6s ease
-  transition-timing-function: cubic-bezier(0.75, 0, 0.29, 1.01)
-  margin-top: 10px
-  position: absolute
+  margin-bottom: 3px
 
-.icon
-  z-index: 999
-  position: fixed
-  display: block
-  padding: 9px
-  height: 32px
-  width: 32px
-  margin: 0px
-  top: 0
-  left: 0
-
-.mobilenav
-  font-family: inherit
-  top: 0
-  left: 0
-  z-index: 999
-  display: none
-  position: fixed
+#navbar
+  height: 45px
   width: 100%
-  height: 100%
-  background: $smooth-green
+  position: absolute
+  z-index: 9999
+  background: black
+
+.page-content
+  width: 75%
+  margin: auto
+  position: relative
+  z-index: 0
+  -webkit-transition: all 0.15s ease-out 0
+  -moz-transition: all 0.15s ease-out 0
+  transition: all 0.15s ease-out 0
+  background: #eeeeee
+
+.toggle
+  text-decoration: none
+  font-size: 30px
+  color: black
+  -webkit-transition: all 0.15s ease-out 0
+  -moz-transition: all 0.15s ease-out 0
+  transition: all 0.15s ease-out 0
+  position: fixed
+  top: 20px
+  left: 20px
+  z-index: 1
+  cursor: pointer
+  transition: .8s
+
+.sidebar
+  position: fixed
+  top: 0px
+  bottom: 0px
+  left: -180px
+  -webkit-transition: all 0.15s ease-out 0
+  -moz-transition: all 0.15s ease-out 0
+  transition: all 0.15s ease-out 0
+  width: 180px
+  padding: 30px
+  background: #303e49
+  z-index: 9998
+  transition: .7s
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
   li
-    list-style-type: none
-    text-align: center
-    padding: 10px
-    a
-      font-size: 150%
-      color: #fff
-      text-decoration: none
-      font-weight: 300
-      width: 100%
-    &:first-child
-      margin-top: 60px
+    color: rgba(255, 255, 255, 0.8)
+    font-family: sans-serif
+    font-size: 16px
+    margin: 0
+    margin-bottom: 16px
+    -webkit-font-smoothing: antialiased
+    cursor: pointer
+    &:hover
+      color: white
+
+  a
+    color: white
+
+#sidebartoggler
+  display: none
+  &:checked + .page-wrap
+    .sidebar
+      left: 0px
+      transition: .2s
+    left: 220px
+
+    .toggle
+      left: 200px
+    transition: .3s
+    .page-content
+      opacity: .8
 
 @media #{$desktop}
-  a.icon
+  .mobile-hide
     display: none
 @media #{$phones}
   nav.top-bar
