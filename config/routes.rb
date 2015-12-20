@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   get 'for-teachers' => 'for_teachers#index'
   get '/for-teachers/application' => 'for_teachers#application'
   get 'why-help' => 'why_help#index'
+  get 'how-to-help' => 'how_to_help#index'
 end

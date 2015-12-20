@@ -55,5 +55,7 @@
           %p ___
           %p Learn More!
           .button-group{"data-grouptype" => "OR"}
-            %button.small.button.primary.radius{:href => "#"} Why Help?
-            %button.small.button.success.radius{:href => "#"} How to Help?
+            %a{:href => "/why-help"}
+              %button.small.button.primary.radius Why Help?
+            %a{:href => "/how-to-help"}
+              %button.small.button.success.radius How to Help?
